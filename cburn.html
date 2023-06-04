@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calorie Burn Calculator</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\ELCOT\Downloads\Food Website\Food Website\image/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="cburn.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Calorie Burn Calculator</h2>
+    <form>
+      <div class="form-group">
+        <label for="activity">Select an activity:</label>
+        <select id="activity" name="activity" required>
+          <option value="running">Running</option>
+          <option value="walking">Walking</option>
+          <option value="cycling">Cycling</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration (in minutes):</label>
+        <input type="number" id="duration" name="duration" step="1" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight (in kg):</label>
+        <input type="number" id="weight" name="weight" step="0.1" min="1" required>
+      </div>
+      <input type="submit" value="Calculate">
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>
